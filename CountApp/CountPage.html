@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>カウントアップアプリ</title>
+  </head>
+  <script src="https://unpkg.com/vue@3"></script>
+  <body>
+    <div id="app">
+      <h1>カウント: {{ count }}</h1>
+      <input type="number" v-model="increment" placeholder="増加量">
+      <button @click="countUp" class="count-button">
+        <span>Tap to Count</span>
+      </button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
